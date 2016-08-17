@@ -19,6 +19,6 @@ describe 'new post' do
 
     click_on "Submit Post"
 
-    expect(page).to have_content("My post title")
+    expect(page).to have_content("Post title")
   end
 end
