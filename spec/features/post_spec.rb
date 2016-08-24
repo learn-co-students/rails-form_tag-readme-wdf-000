@@ -17,6 +17,9 @@ describe 'new post' do
     fill_in 'title', with: "My post title"
     fill_in 'description', with: "My post description"
 
+    # fill_in 'post_title', with: "My post title"
+    # fill_in 'post_description', with: "My post description"
+
     click_on "Submit Post"
 
     expect(page).to have_content("My post title")
