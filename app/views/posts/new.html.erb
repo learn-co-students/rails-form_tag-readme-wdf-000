@@ -2,11 +2,12 @@
 
 <form action="<%= posts_path %>" method="POST">
   <label>Post tite:</label><br>
-  <input type="text" id="post_title" name="post_title">
+  <input type="text" id="post_title" name="post[title]">
 
   <label>Post Description</label><br>
-  <textarea id="post_description" name="post_description"></textarea><br>
+  <textarea id="post_description" name="post[description]"></textarea><br>
 
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <input type="submit" value="Submit Post">
 </form>
 
