@@ -1,0 +1,6 @@
+<li>
+  <% Post.all.each do |post| %>
+    <p><%= post.title %> <%= post.description %></p>
+  <% end %>
+</li>
+
